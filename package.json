@@ -1,0 +1,27 @@
+{
+  
+  "name": "localify",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "vite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saloni2811/Localify.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/saloni2811/Localify/issues"
+  },
+  "homepage": "https://github.com/saloni2811/Localify#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.23",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.3.8"
+  }
+}

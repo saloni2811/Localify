@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/8efea88c50.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact</title>
+</head>
+
+<body class="select-none">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat&family=Ubuntu&display=swap');
+
+        .about> ::placeholder {
+            color: black;
+        }
+    </style>
+    <!-- //............Creating Navbar...........//   -->
+    <nav id="navbar"
+        class=" fixed bg-white w-full  z-20 top-0 left-0 border-b border-gray-200 dark:border-gray-600 navdes">
+        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-4 p-4 ">
+            <div class="flex">
+                <svg class="hello" height="65" width="85">
+                    <circle class="first" r="16.9" cx="32.5" cy="32.5" fill="none" stroke="#0EA5E9"
+                        stroke-width="3.9px" />
+                    <circle r="18.2" cx="55.9" cy="32.5" fill="none" stroke="white" stroke-width="6.5px" />
+                    <circle class="second" r="16.9" cx="53.82" cy="32.5" fill="none" stroke="black"
+                        stroke-width="3.9px" />
+                </svg>
+                <span class="self-center text-3xl font-semibold whitespace-nowrap">Localify</span>
+            </div>
+            <div>
+                <ul class="flex items-center space-x-3 justify-end">
+                    <li class="text-sky-500 font-bold hover:text-black p-2">Home</li>
+                    <li class="text-sky-500 font-bold hover:text-black p-2">Search</li>
+                    <li class="text-sky-500 font-bold hover:text-black p-2">Add</li>
+                    <li class="text-sky-500 font-bold hover:text-black">
+                        <div class="dropdown">
+                            <button class="dropbtn text-sky-500 hover:text-black">About Us
+                                <i class="fa fa-caret-down"></i>
+                            </button>
+                            <div class="dropdown-content bg-sky-500 border-1 border-sky-600">
+                                <a href="#" class="text-white hover:text-black">Meet Our Team</a>
+                                <hr>
+                                <a href="#" class="text-white hover:text-black">Contact Us</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="signup.html"><button
+                                class="bg-sky-400 hover:bg-sky-500 text-white font-bold py-2 px-4 rounded-3xl  hover:border-black border-white border-2 hover:border-2">
+                                Get Started
+                            </button></a></li>
+                    <li><button
+                            class="bg-sky-400 hover:bg-sky-500 text-white font-bold py-2 px-4 rounded-3xl  hover:border-black border-white border-2 hover:border-2">
+                            Log in
+                        </button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ----------------Contact Started------------------- -->
+
+    <div class="mt-20 w-[100vw] h-[160vh] bg-sky-100  flex">
+        <div class="w-[50vw] py-10 ">
+            <h1 class="text-8xl mx-4 " style="font-family: 'Lilita One', cursive;">We do whatever it takes</h1>
+            <p class="text-3xl py-4 mx-4 font-semibold" style="font-family: ' cursive">How can we help?</p>
+            <form class=" about flex flex-wrap">
+                <div class="flex justify-start items-start w-full">
+                    <div class="  flex flex-col p-8 w-1/2">
+
+                        <label for="form-input-firstName" class="text-lg font-semibold">First Name</label>
+                        <input class=" border-black border-b bg-sky-100 outline-none px-2 p-4 focus:border-sky-500    "
+                            type="text" name="fname" placeholder="" required>
+                    </div>
+
+                    <div class="flex flex-col p-8 w-1/2">
+                        <label for="form-input-lastName" class="text-lg font-semibold">Last Name</label>
+                        <input class="  border-black border-b bg-sky-100 outline-none px-2 p-4 focus:border-sky-500"
+                            type="text" name="lname" placeholder="" required>
+                    </div>
+                </div>
+
+                <div class="p-8 w-full">
+                    <label for="form-input-Email" class=" text-lg font-semibold">Email</label>
+                    <input class=" border-black border-b bg-sky-100 outline-none p-4 w-full focus:border-sky-500 "
+                        type="email" name="email" placeholder="" required>
+                </div>
+
+                <div class="w-full p-8">
+                    <label for="form-input-phoneNo." class="text-lg font-semibold">Phone Number</label>
+                    <input class="  border-black border-b bg-sky-100 outline-none p-4 w-full focus:border-sky-500 "
+                        type="text" name="phno." placeholder="" required>
+                </div>
+
+                <div class="w-full p-8">
+                    <label for="form-input-Password" class="text-lg font-semibold">Password</label>
+                    <input class="  border-black border-b bg-sky-100 outline-none p-4 w-full focus:border-sky-500 "
+                        type="password" name="pass" placeholder="" required>
+                </div>
+
+                <div class="w-full p-8">
+                    <label for="form-input-confirmPassword" class="text-lg font-semibold">Confirm Password</label>
+                    <input class="  border-black border-b bg-sky-100 outline-none p-4 w-full focus:border-sky-500 "
+                        type="password" name="confipass" placeholder="" required>
+                </div>
+                <button
+                    class=" bg-sky-600 ml-72 hover:bg-sky-500 text-white font-bold py-2 px-10 mt-10 mb-2 rounded-2xl  hover:border-black border-white border-2 hover:border-2 active:bg-sky-400 ">SUBMIT</button>
+            </form>
+
+
+
+        </div>
+        <div class="w-[50vw]">
+            <img class="h-[160vh] w-full " src="photo1.png" alt="" srcset="">
+
+        </div>
+    </div>
+
+
+    <!-- //.................footer...................// -->
+
+    <footer class="bg-sky-300  h-96 flex justify-center reveal">
+        <div class="  w-1/3 flex flex-col items-start p-6 reveal">
+            <svg class="hello" height="65" width="85">
+                <circle class="first" r="16.9" cx="32.5" cy="32.5" fill="none" stroke="white" stroke-width="3.9px" />
+                <circle r="18.2" cx="55.9" cy="32.5" fill="none" stroke="rgb(125 211 252 / var(--tw-bg-opacity))"
+                    stroke-width="6.5px" />
+                <circle class="second" r="16.9" cx="53.82" cy="32.5" fill="none" stroke="black" stroke-width="3.9px" />
+            </svg>
+            <span class=" text-4xl font-semibold whitespace-nowrap">Localify</span>
+            <p>&nbsp;</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed eos obcaecati consequatur maxime? Ducimus
+                sint cum quisquam laboriosam. Saepe id architecto veritatis voluptatibus!</p>
+        </div>
+        <div class="w-1/3 flex  flex-col pl-12 pr-12 reveal pt-14">
+            <h1 class="font-semibold text-4xl">Contacts</h1>
+            <p>&nbsp;</p>
+            <p><i class="fa-solid fa-location-dot fa-xl"></i> Ranchi, Jharkhand</p>
+            <p>&nbsp;</p>
+            <p><i class="fa-solid fa-phone fa-xl"></i> +91-9999999999</p>
+            <p>&nbsp;</p>
+            <p><i class="fa-solid fa-envelope fa-xl"></i> contactus@localify.ac.in</p>
+            <p>&nbsp;</p>
+            <p><i class="fa-brands fa-twitter fa-xl"></i> twitter: Localify_business</p>
+        </div>
+        <div class="w-1/3 flex  flex-col pl-12 pr-12 reveal pt-14">
+            <h1 class="font-semibold text-4xl">Follow Us</h1>
+            <p>&nbsp;</p>
+            <div class="flex space-x-3">
+                <i class="hover:cursor-pointer fa-brands fa-instagram fa-xl"></i>
+                <i class="hover:cursor-pointer fa-brands fa-linkedin fa-xl"></i>
+                <i class="hover:cursor-pointer fa-brands fa-facebook fa-xl"></i>
+                <i class="hover:cursor-pointer fa-brands fa-github fa-xl"></i>
+            </div>
+        </div>
+    </footer>
+    <button class="bg-black hover:bg-sky-700" onclick="topFunction()" id="myBtn" title="Go to top"><i
+            class="fa-solid text-white fa-arrow-up"></i></button>
+
+    <div class="bg-sky-600 h-20 flex justify-center items-center ">
+        © Localify, India - 2023
+    </div>
+
+
+<script src="index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+.hello{
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+.hello:hover{
+    transform: rotate(540deg);
+}
+
+.first{
+    animation: neon 1s linear 2 ;
+}
+.second{
+    animation: neon 1s linear 0.5s 2 ;
+}
+
+@keyframes neon {
+    0%{
+       visibility: hidden;
+    }
+    25%{
+        opacity: 0.5;
+    }
+    50%{
+        visibility: hidden;
+    }
+    60%{
+        transform: scale(1); 
+    }
+    75%{
+        transform: scale(1.05);
+    }
+    90%{
+        transform: scale(0.95);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+
+/* //..............for dropdown.........// */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    padding: 14px 12px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 4px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    padding: 12px 12px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+
+  /* animation for navbar */
+
+.navdes{
+    transition: transform 0.2s;
+}
+
+
+
+  .nav__hidden{
+    transform: translateY(-6rem);
+  }
+
+  /* for scroll to top button */
+
+  #myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */ 
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+    border-radius: 50%;
+  }
+
+    /* styling of animation of text */
+
+.reveal{
+    position: relative;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+  }
+  .reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  
+  /* styling of animation of images */
+  
+  .image{
+    position: relative;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 500ms ease;
+  }
+  .image.active{
+    transform: translateX(0px);  
+    opacity: 1;
+  }
+
+  /* ------------for styling placeholder-------------- */
+  
+  .shopinfo > ::placeholder{
+    color:black;
+  }
